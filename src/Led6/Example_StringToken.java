@@ -25,11 +25,9 @@ public class Example_StringToken {
                 " หลังจากนั้นมันจะกลายเป็นดาวยักษ์แดง (red giant) และในที่สุดเมื่อชั้นบรรยากาศของมันหมดไป แกนกลางก็จะยุบตัวกลายเป็นดาวแคระขาว (white dwarf)");
         StringTokenizer strToken = new StringTokenizer(str.toString());
         int countWord = strToken.countTokens();
-        System.out.println("Word count" + countWord);
-        while (strToken.hasMoreTokens()) {
+        System.out.println("Word count: "+countWord);
+        while (strToken.hasMoreTokens()){
             System.out.println(strToken.nextToken());
         }
-
-
     }
 }
